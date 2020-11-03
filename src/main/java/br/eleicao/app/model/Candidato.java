@@ -16,7 +16,16 @@ public class Candidato {
 	private String Numero;
 	private String Nome;
 	private String categoria;
+	private String Tipo;
 	
+	public String getTipo() {
+		return Tipo;
+	}
+
+	public void setTipo(String tipo) {
+		Tipo = tipo;
+	}
+
 	@ManyToOne
     @JoinColumn(name="MunicipioId")
     private Municipio Municipio;
