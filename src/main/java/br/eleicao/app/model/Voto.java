@@ -20,6 +20,20 @@ public class Voto {
 	@ManyToOne
 	@JoinColumn(name = "CandidatoId")
 	private Candidato Candidato;
+	
+	@ManyToOne
+	@JoinColumn(name = "ZonaEleitoralId")
+	private ZonaEleitoral ZonaEleitoral ;
+
+
+	public ZonaEleitoral getZonaEleitoral() {
+		return ZonaEleitoral;
+	}
+
+
+	public void setZonaEleitoral(ZonaEleitoral zonaEleitoral) {
+		ZonaEleitoral = zonaEleitoral;
+	}
 
 
 	public Long getId() {
